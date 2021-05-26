@@ -6,7 +6,7 @@
   <link href="http://albert-5.cn/atom.xml" rel="self"/>
   
   <link href="http://albert-5.cn/"/>
-  <updated>2021-05-26T06:08:36.646Z</updated>
+  <updated>2021-05-26T06:08:51.936Z</updated>
   <id>http://albert-5.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://albert-5.cn/24a253e0.html"/>
     <id>http://albert-5.cn/24a253e0.html</id>
     <published>2021-05-26T06:05:54.000Z</published>
-    <updated>2021-05-26T06:08:36.646Z</updated>
+    <updated>2021-05-26T06:08:51.936Z</updated>
     
     <content type="html"><![CDATA[<center><font family="微软雅黑" size="5" color="‘indigo’">RK71蓝牙双模使用说明</font></center><h1 id="复合键功能"><a href="#复合键功能" class="headerlink" title="复合键功能"></a>复合键功能</h1><table><thead><tr><th>space</th><th>Win系统</th><th>Mac系统</th></tr></thead><tbody><tr><td><strong>Fn+1</strong></td><td>F1</td><td>屏幕亮度+</td></tr><tr><td><strong>Fn+2</strong></td><td>F2</td><td>屏幕亮度-</td></tr><tr><td><strong>Fn+3</strong></td><td>F3</td><td>多任务切换</td></tr><tr><td><strong>Fn+4</strong></td><td>F4</td><td>所有多任务</td></tr><tr><td><strong>Fn+5</strong></td><td>F5</td><td>无</td></tr><tr><td><strong>Fn+6</strong></td><td>F6</td><td>无</td></tr><tr><td><strong>Fn+7</strong></td><td>F7</td><td>上一首</td></tr><tr><td><strong>Fn+8</strong></td><td>F8</td><td>播放/暂停</td></tr><tr><td><strong>Fn+9</strong></td><td>F9</td><td>下一首</td></tr><tr><td><strong>Fn+10</strong></td><td>F10</td><td>静音</td></tr><tr><td><strong>Fn+11</strong></td><td>F11</td><td>音量-</td></tr><tr><td><strong>Fn+12</strong></td><td>F12</td><td>音量+</td></tr></tbody></table><h1 id="功能键"><a href="#功能键" class="headerlink" title="功能键"></a>功能键</h1><table><thead><tr><th><strong>Fn+空格  长按3秒</strong>恢复出厂设置</th><th><strong>Fn+P(短按一下)</strong> 蓝牙/有线切换</th><th><strong>Fn+Tab</strong> 宏按键模式  开启/关闭</th></tr></thead><tbody><tr><td><strong>Fn+A</strong> win系统</td><td><strong>Fn+P(长按3秒)</strong> 蓝牙配对</td><td><strong>Fn+Z/X/C(长按3秒)</strong> 3组宏按键录制</td></tr><tr><td><strong>Fn+S</strong> Mac系统</td><td><strong>Fn+Q/W/E/R/T</strong> 五组蓝牙设备</td><td><strong>Fn+↑/↓</strong> 背光亮度设置</td></tr><tr><td><strong>Fn+Win</strong> 锁定win键</td><td><strong>Fn+Home</strong> 17种背光切换</td><td><strong>Fn+←/→</strong> 背光速度设置</td></tr><tr><td></td><td><strong>Fn+Insert</strong> 侧边灯切换</td><td><strong>Fn+End</strong> 切换背光颜色</td></tr><tr><td></td><td></td></tr></tbody></table><ul><li><p>如何输入波浪号~</p><p>Fn+Shift+ESC</p></li><li><p>如何输入圆点·</p><p>Fn+ESC</p></li><li><p>背景灯光设置</p><blockquote><p>Fn+Home 17种背光效果切换</p><p>Fn+End   切换背光颜色</p><p>Fn+Insert   10种侧翼灯切换</p></blockquote></li><li><p>背光亮度和速度设置</p><blockquote><p>Fn+ ↑    背光亮度增加</p><p>Fn+←   动态变换速度减小</p></blockquote></li><li><p>蓝牙功能</p><p>Fn+P(短按一下)  蓝牙和有线模式切换</p><blockquote><p>切换时背光灯闪烁两次，表示切换成功</p></blockquote><p>Fn+P(长按3秒)   进入蓝牙匹配模式</p><blockquote><p>配对时，p键持续闪烁，配对成功后停止闪烁</p></blockquote></li><li><p>蓝牙连接方法</p><p>1、打开键盘背部开关</p><p>2、确保键盘为蓝牙模式</p><blockquote><p>验证方法：Fn+Q全键背光闪烁2次证明为蓝牙模式，反之若无反应请通过Fn+P（短按）切换为蓝牙模式</p></blockquote><p>3、Fn+Q/W/E/R/T可连接5个设备</p><p>4、Fn+P长按3秒，使键盘进入配对模式，此时P键持续闪烁</p><p>5、打开电脑/手机/ipad等设备搜索蓝牙</p><p>6、连接成功，P键停止闪烁</p></li></ul><h1 id="其他设置"><a href="#其他设置" class="headerlink" title="其他设置"></a>其他设置</h1><ul><li><p>恢复出厂设置</p><p>Fn+空格 长按3秒</p><blockquote><p>全键背光闪烁2次，此时已完成出厂设置，会清除键盘所有信息，包括录制好的宏按键灯光效果</p></blockquote></li><li><p>开启/关闭 win键功能</p><p>Fn+Win键</p></li></ul>]]></content>
     
