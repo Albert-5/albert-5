@@ -53,20 +53,6 @@
 
   
   <url>
-    <loc>http://albert-5.cn/tags/RK71%E6%9C%BA%E6%A2%B0%E9%94%AE%E7%9B%98/</loc>
-    <lastmod>2021-05-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://albert-5.cn/tags/%E8%AF%B4%E6%98%8E%E4%B9%A6/</loc>
-    <lastmod>2021-05-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://albert-5.cn/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2021-05-26</lastmod>
     <changefreq>daily</changefreq>
@@ -80,17 +66,31 @@
     <priority>0.6</priority>
   </url>
   
-
-  
   <url>
-    <loc>http://albert-5.cn/categories/%E8%AF%B4%E6%98%8E%E4%B9%A6/</loc>
+    <loc>http://albert-5.cn/tags/RK71%E6%9C%BA%E6%A2%B0%E9%94%AE%E7%9B%98/</loc>
     <lastmod>2021-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
+    <loc>http://albert-5.cn/tags/%E8%AF%B4%E6%98%8E%E4%B9%A6/</loc>
+    <lastmod>2021-05-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+  <url>
     <loc>http://albert-5.cn/categories/%E9%A2%86%E6%89%A3%E7%AE%97%E6%B3%95%E9%A2%98/</loc>
+    <lastmod>2021-05-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://albert-5.cn/categories/%E8%AF%B4%E6%98%8E%E4%B9%A6/</loc>
     <lastmod>2021-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
