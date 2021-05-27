@@ -6,7 +6,7 @@
   <link href="http://albert-5.cn/atom.xml" rel="self"/>
   
   <link href="http://albert-5.cn/"/>
-  <updated>2021-05-26T09:02:33.603Z</updated>
+  <updated>2021-05-27T03:38:25.425Z</updated>
   <id>http://albert-5.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客展示Github_Charts</title>
+    <link href="http://albert-5.cn/f28a9c3d.html"/>
+    <id>http://albert-5.cn/f28a9c3d.html</id>
+    <published>2021-05-27T03:02:07.000Z</published>
+    <updated>2021-05-27T03:38:25.425Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>本文主要介绍如何在个人博客中展示Github Chart。且在Github上已经有了开源工具，并提供了API，稍微配置下就行了。</strong></p><p><strong>工具地址：<a href="https://ghchart.rshah.org/" target="_blank" rel="noopener">Github Chart API</a></strong></p><p>这个工具可以实时地将<em>Github Chart</em>信息转化为一张图片，如下图所示，我们可以将其插入到我们的博客中。</p><p><img src="http://ghchart.rshah.org/009006/albert-5" alt="Albert's Blue Github Chart"></p><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>我们只需要在<a href="https://ghchart.rshah.org/这个地址上加上自己的**Github用户名**即可构造自己的Github" target="_blank" rel="noopener">https://ghchart.rshah.org/这个地址上加上自己的**Github用户名**即可构造自己的Github</a> Chart图片的链接了，比如我的Github名为albert-5，那就是</p><blockquote><p><a href="https://ghchart.rshah.org/albert-5" target="_blank" rel="noopener">https://ghchart.rshah.org/albert-5</a></p></blockquote><h2 id="Markdown-插入图片"><a href="#Markdown-插入图片" class="headerlink" title="Markdown 插入图片"></a>Markdown 插入图片</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">albert-5’s Github Charts</span>](<span class="link">https://ghchart.rshah.org/albert-5</span>)</span><br></pre></td></tr></table></figure><h2 id="HTML插入图片"><a href="#HTML插入图片" class="headerlink" title="HTML插入图片"></a>HTML插入图片</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"http://ghchart.rshah.org/albert-5"</span> <span class="attr">alt</span>=<span class="string">"albert-5's Github Charts"</span> /&gt;</span></span><br></pre></td></tr></table></figure><h2 id="自定义颜色"><a href="#自定义颜色" class="headerlink" title="自定义颜色"></a>自定义颜色</h2><p>此工具还支持自定义配色方案，我们可以提供任何基本颜色来为图标添加阴影，自定义颜色可以访问<a href="https://www.w3schools.com/colors/colors_rgb.asp" target="_blank" rel="noopener">网站</a>。</p><p>我们只需要访问<a href="http://ghchart.rshah.org/" target="_blank" rel="noopener">http://ghchart.rshah.org/</a>&lt;##&gt;/albert-5，将##替换为我们想要设置的十六进制颜色代码（去掉颜色代码前面的#）就行了。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"http://ghchart.rshah.org/009006/albert-5"</span> <span class="attr">alt</span>=<span class="string">"Albert's Blue Github Chart"</span> /&gt;</span></span><br></pre></td></tr></table></figure><h2 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h2><ul><li><a href="https://ghchart.rshah.org/" target="_blank" rel="noopener">Github Chart API</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;本文主要介绍如何在个人博客中展示Github Chart。且在Github上已经有了开源工具，并提供了API，稍微配置下就行了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;工具地址：&lt;a href=&quot;https://ghchart.rshah.org/</summary>
+      
+    
+    
+    
+    <category term="博客优化" scheme="http://albert-5.cn/categories/博客优化/"/>
+    
+    
+    <category term="Github Charts" scheme="http://albert-5.cn/tags/Github-Charts/"/>
+    
+  </entry>
   
   <entry>
     <title>RK71键盘说明书</title>
