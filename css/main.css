@@ -1954,7 +1954,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff4a0f;
+  background: #ff0900;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3432,6 +3432,10 @@ pre {
 code,
 pre {
   border: 1px solid #d6d6d6;
+}
+.headband {
+  height: 3px;
+  background: #dd0f15;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
