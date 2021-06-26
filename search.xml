@@ -7,8 +7,11 @@
 <h4 id="1-两数之和问题"><a href="#1-两数之和问题" class="headerlink" title="1. 两数之和问题"></a>1. 两数之和问题</h4><p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。</p>
 <p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。</p>
 <p><strong>示例:</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">给定 nums = [2, 7, 11, 15], target = 9</span><br><span class="line"></span><br><span class="line">因为 nums[0] + nums[1] = 2 + 7 = 9</span><br><span class="line">所以返回 [0, 1]</span><br></pre></td></tr></table></figure>
-<p>解法1–暴力解法</p>
+<pre><code>给定 nums = [2, 7, 11, 15], target = 9
+
+因为 nums[0] + nums[1] = 2 + 7 = 9
+所以返回 [0, 1]
+</code></pre><p>解法1–暴力解法</p>
 <p>思路：</p>
 <blockquote>
 <p>给定一个数组和一个特定的目标值，对每一个数进行遍历，然后利用两层循环遍历的值进行if条件判断，如果相等，则返回下标；否则返回None.</p>
@@ -28,7 +31,20 @@
 </blockquote>
 <p>具体实现：</p>
 <blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt; <span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">&gt; <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span><span class="params">(self, nums, target)</span>:</span></span><br><span class="line">&gt; <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(nums)):</span><br><span class="line">&gt;  a = target - nums[i]</span><br><span class="line">&gt;  <span class="keyword">if</span> a <span class="keyword">in</span> nums:</span><br><span class="line">&gt;      b = nums.index(a)</span><br><span class="line">&gt;      <span class="keyword">if</span> b != i:</span><br><span class="line">&gt;          <span class="keyword">return</span> [i, b]</span><br><span class="line">&gt; </span><br><span class="line">&gt; nums = [<span class="number">2</span>, <span class="number">7</span>, <span class="number">11</span>, <span class="number">15</span>]</span><br><span class="line">&gt; target = <span class="number">9</span></span><br><span class="line">&gt; solution = Solution()</span><br><span class="line">&gt; print(solution.twoSum(nums, target))</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<pre><code class="python">class Solution:
+def twoSum(self, nums, target):
+for i in range(0, len(nums)):
+ a = target - nums[i]
+ if a in nums:
+     b = nums.index(a)
+     if b != i:
+         return [i, b]
+
+nums = [2, 7, 11, 15]
+target = 9
+solution = Solution()
+print(solution.twoSum(nums, target))
+</code></pre>
 </blockquote>
 <p>解法3–优化算法 &lt;来源于网络，怪自己 :sweat:···&gt;</p>
 <p>思路：</p>
@@ -37,17 +53,35 @@
 </blockquote>
 <p>具体实现：</p>
 <blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt; <span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">&gt; <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span><span class="params">(self, nums, target)</span>:</span></span><br><span class="line">&gt; dic = &#123;&#125;</span><br><span class="line">&gt; <span class="keyword">for</span> x <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">&gt;   <span class="keyword">if</span> target - nums[x] <span class="keyword">in</span> dic:</span><br><span class="line">&gt;      result = [dic[target - nums[x]], x]</span><br><span class="line">&gt;      <span class="keyword">return</span> result</span><br><span class="line">&gt;   dic[nums[x]] = x</span><br><span class="line">&gt;  </span><br><span class="line">&gt; nums = [<span class="number">2</span>, <span class="number">7</span>, <span class="number">11</span>, <span class="number">15</span>]</span><br><span class="line">&gt; target = <span class="number">9</span></span><br><span class="line">&gt; solution = Solution()</span><br><span class="line">&gt; print(solution.twoSum(nums, target))</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<pre><code class="python">class Solution:
+def twoSum(self, nums, target):
+dic = {}
+for x in range(len(nums)):
+  if target - nums[x] in dic:
+     result = [dic[target - nums[x]], x]
+     return result
+  dic[nums[x]] = x
+
+nums = [2, 7, 11, 15]
+target = 9
+solution = Solution()
+print(solution.twoSum(nums, target))
+</code></pre>
 </blockquote>
 <hr>
 <h4 id="2-回文数问题"><a href="#2-回文数问题" class="headerlink" title="2. 回文数问题"></a>2. 回文数问题</h4><p>判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。</p>
 <p><strong>示例 1:</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入: 121</span><br><span class="line">输出: true</span><br></pre></td></tr></table></figure>
-<p><strong>示例 2:</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入: -121</span><br><span class="line">输出: false</span><br><span class="line">解释: 从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。</span><br></pre></td></tr></table></figure>
-<p><strong>示例 3:</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入: 10</span><br><span class="line">输出: false</span><br><span class="line">解释: 从右向左读, 为 01 。因此它不是一个回文数。</span><br></pre></td></tr></table></figure>
-<p>解法1–较优化解法</p>
+<pre><code>输入: 121
+输出: true
+</code></pre><p><strong>示例 2:</strong></p>
+<pre><code>输入: -121
+输出: false
+解释: 从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。
+</code></pre><p><strong>示例 3:</strong></p>
+<pre><code>输入: 10
+输出: false
+解释: 从右向左读, 为 01 。因此它不是一个回文数。
+</code></pre><p>解法1–较优化解法</p>
 <p>思路：</p>
 <blockquote>
 <p>将所给数字转化为<strong>字符串</strong>，因为回文数是具有对称性的，所以比较字符串的第一位和最后一位、第一次位和末尾次位 ······<font color="indigo">但是由于一位数以及负数和末尾为0的数的特殊性，应该加以判断。</font></p>
@@ -55,7 +89,37 @@
 </blockquote>
 <p>实现：</p>
 <blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt; <span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">&gt; </span><br><span class="line">&gt; <span class="function"><span class="keyword">def</span> <span class="title">isPalindrome</span><span class="params">(self, x)</span>:</span></span><br><span class="line">&gt;   n = str(x)</span><br><span class="line">&gt;   print(n)</span><br><span class="line">&gt;   m = len(n)</span><br><span class="line">&gt;   count = <span class="number">0</span></span><br><span class="line">&gt;   <span class="keyword">if</span> m == <span class="number">1</span>:</span><br><span class="line">&gt;       <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">&gt;   <span class="keyword">elif</span> n[<span class="number">0</span>] == <span class="string">"-"</span> <span class="keyword">or</span> n[m<span class="number">-1</span>] == <span class="string">'0'</span>:</span><br><span class="line">&gt;       <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">&gt;   <span class="keyword">elif</span> m % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">&gt;       <span class="keyword">for</span> i <span class="keyword">in</span> range(int(m/<span class="number">2</span>)):</span><br><span class="line">&gt;           <span class="keyword">if</span> n[i] == n[m<span class="number">-1</span>-i]:</span><br><span class="line">&gt;               count += <span class="number">1</span></span><br><span class="line">&gt;           <span class="keyword">else</span>:</span><br><span class="line">&gt;               <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">&gt;   <span class="keyword">else</span>:</span><br><span class="line">&gt;       <span class="keyword">for</span> i <span class="keyword">in</span> range(int((m+<span class="number">1</span>)/<span class="number">2</span>)):</span><br><span class="line">&gt;           <span class="keyword">if</span> n[i] == n[m<span class="number">-1</span>-i]:</span><br><span class="line">&gt;               count += <span class="number">1</span></span><br><span class="line">&gt;           <span class="keyword">else</span>:</span><br><span class="line">&gt;               <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">&gt;   <span class="keyword">if</span> count == int(m/<span class="number">2</span>) <span class="keyword">or</span> count == int((m+<span class="number">1</span>)/<span class="number">2</span>):</span><br><span class="line">&gt;       <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">&gt; </span><br><span class="line">&gt; </span><br><span class="line">&gt; X = <span class="number">0</span></span><br><span class="line">&gt; solution = Solution()</span><br><span class="line">&gt; print(solution.isPalindrome(X))</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<pre><code class="python">class Solution(object):
+
+def isPalindrome(self, x):
+  n = str(x)
+  print(n)
+  m = len(n)
+  count = 0
+  if m == 1:
+      return True
+  elif n[0] == &quot;-&quot; or n[m-1] == &#39;0&#39;:
+      return False
+  elif m % 2 == 0:
+      for i in range(int(m/2)):
+          if n[i] == n[m-1-i]:
+              count += 1
+          else:
+              return False
+  else:
+      for i in range(int((m+1)/2)):
+          if n[i] == n[m-1-i]:
+              count += 1
+          else:
+              return False
+  if count == int(m/2) or count == int((m+1)/2):
+      return True
+
+
+X = 0
+solution = Solution()
+print(solution.isPalindrome(X))
+</code></pre>
 </blockquote>
 <p>时间复杂度为 O(n)</p>
 <p>执行代码，运行时间108 ms</p>
@@ -245,13 +309,17 @@
     <title>Hello World</title>
     <url>/4a17b156.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
   </entry>
@@ -308,11 +376,14 @@
 <blockquote>
 <p><a href="https://ghchart.rshah.org/albert-5" target="_blank" rel="noopener">https://ghchart.rshah.org/albert-5</a></p>
 </blockquote>
-<h2 id="Markdown-插入图片"><a href="#Markdown-插入图片" class="headerlink" title="Markdown 插入图片"></a>Markdown 插入图片</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">albert-5’s Github Charts</span>](<span class="link">https://ghchart.rshah.org/albert-5</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="HTML插入图片"><a href="#HTML插入图片" class="headerlink" title="HTML插入图片"></a>HTML插入图片</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"http://ghchart.rshah.org/albert-5"</span> <span class="attr">alt</span>=<span class="string">"albert-5's Github Charts"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Markdown-插入图片"><a href="#Markdown-插入图片" class="headerlink" title="Markdown 插入图片"></a>Markdown 插入图片</h2><pre><code class="markdown">![albert-5’s Github Charts](https://ghchart.rshah.org/albert-5)
+</code></pre>
+<h2 id="HTML插入图片"><a href="#HTML插入图片" class="headerlink" title="HTML插入图片"></a>HTML插入图片</h2><pre><code class="html">&lt;img src=&quot;http://ghchart.rshah.org/albert-5&quot; alt=&quot;albert-5&#39;s Github Charts&quot; /&gt;
+</code></pre>
 <h2 id="自定义颜色"><a href="#自定义颜色" class="headerlink" title="自定义颜色"></a>自定义颜色</h2><p>此工具还支持自定义配色方案，我们可以提供任何基本颜色来为图标添加阴影，自定义颜色可以访问<a href="https://www.w3schools.com/colors/colors_rgb.asp" target="_blank" rel="noopener">网站</a>。</p>
 <p>我们只需要访问<a href="http://ghchart.rshah.org/" target="_blank" rel="noopener">http://ghchart.rshah.org/</a>&lt;##&gt;/albert-5，将##替换为我们想要设置的十六进制颜色代码（去掉颜色代码前面的#）就行了。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"http://ghchart.rshah.org/009006/albert-5"</span> <span class="attr">alt</span>=<span class="string">"Albert's Blue Github Chart"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<pre><code class="html">&lt;img src=&quot;http://ghchart.rshah.org/009006/albert-5&quot; alt=&quot;Albert&#39;s Blue Github Chart&quot; /&gt;
+</code></pre>
 <h2 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h2><ul>
 <li><a href="https://ghchart.rshah.org/" target="_blank" rel="noopener">Github Chart API</a></li>
 </ul>
