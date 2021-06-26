@@ -1954,7 +1954,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff0900;
+  background: #77f738;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3436,6 +3436,25 @@ pre {
 .headband {
   height: 3px;
   background: #dd0f15;
+}
+.site-meta {
+  background: #dd0f15;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+}
+body {
+  background: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  color: var(--text-color);
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.btn {
+  color: #dd0f15;
+}
+.btn:hover {
+  color: #dd0f15;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {

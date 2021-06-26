@@ -81,6 +81,13 @@
   </url>
   
   <url>
+    <loc>http://albert-5.cn/tags/Github-Charts/</loc>
+    <lastmod>2021-06-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://albert-5.cn/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2021-06-26</lastmod>
     <changefreq>daily</changefreq>
@@ -89,13 +96,6 @@
   
   <url>
     <loc>http://albert-5.cn/tags/Leetcode/</loc>
-    <lastmod>2021-06-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://albert-5.cn/tags/Github-Charts/</loc>
     <lastmod>2021-06-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -125,14 +125,14 @@
   </url>
   
   <url>
-    <loc>http://albert-5.cn/categories/%E9%A2%86%E6%89%A3%E7%AE%97%E6%B3%95%E9%A2%98/</loc>
+    <loc>http://albert-5.cn/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</loc>
     <lastmod>2021-06-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://albert-5.cn/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</loc>
+    <loc>http://albert-5.cn/categories/%E9%A2%86%E6%89%A3%E7%AE%97%E6%B3%95%E9%A2%98/</loc>
     <lastmod>2021-06-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
