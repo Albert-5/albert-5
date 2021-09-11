@@ -435,6 +435,74 @@ print(solution.isPalindrome(X))
 ]]></content>
   </entry>
   <entry>
+    <title>贪心匹配与非贪心匹配算法</title>
+    <url>/6c62527f.html</url>
+    <content><![CDATA[<h2 id="贪心匹配与非贪心匹配"><a href="#贪心匹配与非贪心匹配" class="headerlink" title="贪心匹配与非贪心匹配"></a>贪心匹配与非贪心匹配</h2><blockquote>
+<p>Python的正则表达式默认是贪心的，即在有二义的情况下，它会匹配最长的字符串；非贪心匹配算法则是尽可能匹配最短的字符串，也就是在花括号的后面加上一个问号。</p>
+</blockquote>
+<pre><code class="Python">hero = re.compile(r&#39;Iron(wo){3,5}&#39;)
+hero1 = re.compile(r&#39;Iron(wo){3,5}?&#39;)
+mo = hero1.search(&#39;My favorate hero is Ironwowowowowo&#39;)
+mo1 = hero1.search(&#39;Ironwowowo&#39;)
+print(mo.group())
+print(mo1.group())
+</code></pre>
+<h2 id="findall-方法"><a href="#findall-方法" class="headerlink" title="findall()方法"></a>findall()方法</h2><blockquote>
+<p>前面我们知道，search()方法返回的是一个match对象，包含被查找字符串中的”第一次“匹配的文本，但是findall()方法返回的是所有匹配。</p>
+</blockquote>
+<pre><code class="Python">phonenumber = re.compile(r&#39;\d\d\d\d-\d\d\d-\d\d\d\d&#39;)
+mo = phonenumber.search(&#39;Cell:0371-123-4321&#39;)
+mo1 = phonenumber.findall(&#39;Cell:0371-123-4321 Work:0371-123-5432&#39;)
+print(mo.group())
+print(mo1)
+</code></pre>
+<p>输出结果如下</p>
+<pre><code class="Python">[Running] python -u &quot;e:\vscode_py\.vscode\hello.py&quot;
+0371-123-4321
+[&#39;0371-123-4321&#39;, &#39;0371-123-5432&#39;]
+
+[Done] exited with code=0 in 0.122 seconds
+</code></pre>
+<ul>
+<li>注：findall()方法返回的直接是匹配文本，并不是search()方法返回的match对象。</li>
+</ul>
+<h2 id="字符分类"><a href="#字符分类" class="headerlink" title="字符分类"></a>字符分类</h2><p>常用字符分类<br>\d &nbsp; 0-9的任何数字<br>\D &nbsp; 除0-9的数字以外的任何字符<br>\w &nbsp; 任何字母、数字或下划线字符<br>\W &nbsp; 除字母、数字或下划线以外的任何字符<br>\s &nbsp; 空格、制表符或换行符<br>\S &nbsp; 除空格、制表符和换行符以外的任何字符</p>
+<h2 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h2><blockquote>
+<p>在正则表达式中，<strong>.</strong>(句号)成为通配符。它匹配除了换行符以外的所有字符。</p>
+</blockquote>
+<pre><code class="python">atreg = re.compile(r&#39;.at&#39;)
+print(atreg.findall(&#39;the cat in the hat sat on the flat mat&#39;))
+</code></pre>
+<p>输出结果</p>
+<pre><code class="python">[Running] python -u &quot;e:\vscode_py\.vscode\hello.py&quot;
+[&#39;cat&#39;, &#39;hat&#39;, &#39;sat&#39;, &#39;lat&#39;, &#39;mat&#39;]
+
+[Done] exited with code=0 in 0.235 seconds
+</code></pre>
+<h3 id="用点-星匹配字符"><a href="#用点-星匹配字符" class="headerlink" title="用点-星匹配字符"></a>用点-星匹配字符</h3><blockquote>
+<p>点-星(.*)匹配“任意文本”</p>
+</blockquote>
+<pre><code class="python">name = re.compile(r&#39;First name:(.*) Last name:(.*)&#39;)
+nameres = name.search(&#39;First name: Yuan Last name: Mengchao&#39;)
+print(nameres.group(1))
+print(nameres.group(2))
+print(nameres.group())
+</code></pre>
+<p>点-星通常进行“贪心”匹配，如要想进行“非贪心“匹配，则需要使用<code>.*?</code>。</p>
+<h3 id="用sub-方法替换字符串"><a href="#用sub-方法替换字符串" class="headerlink" title="用sub()方法替换字符串"></a>用sub()方法替换字符串</h3><blockquote>
+<p>正则表达式不仅匹配的文本，还能用新的文本去替代这些模式文本。<code>Regex</code>对象的sub()方法需要</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>正则表达式</category>
+      </categories>
+      <tags>
+        <tag>正则表达式</tag>
+        <tag>贪心匹配</tag>
+        <tag>非贪心匹配</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>重要讲话</title>
     <url>/a2ce81cb.html</url>
     <content><![CDATA[<p><img src="https://i.loli.net/2021/07/02/ZPA7tGvdwUyMNSO.png" alt="建党百年"></p>

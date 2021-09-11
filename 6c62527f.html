@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, CPC">
+  <meta name="keywords" content="正则表达式,贪心匹配,非贪心匹配,">
 
 
 
@@ -83,14 +83,18 @@
 
 
 
-<meta name="keywords" content="Personal Blog, Sharing, MachineLearning">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Albert&#39;s Blog">
-<meta property="og:url" content="http://albert-5.cn/categories/博客优化/index.html">
+<meta name="description" content="贪心匹配与非贪心匹配 Python的正则表达式默认是贪心的，即在有二义的情况下，它会匹配最长的字符串；非贪心匹配算法则是尽可能匹配最短的字符串，也就是在花括号的后面加上一个问号。  hero = re.compile(r&amp;#39;Iron(wo){3,5}&amp;#39;) hero1 = re.compile(r&amp;#39;Iron(wo){3,5}?&amp;#39;) mo = hero1.search(&amp;">
+<meta name="keywords" content="正则表达式,贪心匹配,非贪心匹配">
+<meta property="og:type" content="article">
+<meta property="og:title" content="贪心匹配与非贪心匹配算法">
+<meta property="og:url" content="http://albert-5.cn/6c62527f.html">
 <meta property="og:site_name" content="Albert&#39;s Blog">
+<meta property="og:description" content="贪心匹配与非贪心匹配 Python的正则表达式默认是贪心的，即在有二义的情况下，它会匹配最长的字符串；非贪心匹配算法则是尽可能匹配最短的字符串，也就是在花括号的后面加上一个问号。  hero = re.compile(r&amp;#39;Iron(wo){3,5}&amp;#39;) hero1 = re.compile(r&amp;#39;Iron(wo){3,5}?&amp;#39;) mo = hero1.search(&amp;">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2021-09-11T13:41:52.725Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Albert&#39;s Blog">
+<meta name="twitter:title" content="贪心匹配与非贪心匹配算法">
+<meta name="twitter:description" content="贪心匹配与非贪心匹配 Python的正则表达式默认是贪心的，即在有二义的情况下，它会匹配最长的字符串；非贪心匹配算法则是尽可能匹配最短的字符串，也就是在花括号的后面加上一个问号。  hero = re.compile(r&amp;#39;Iron(wo){3,5}&amp;#39;) hero1 = re.compile(r&amp;#39;Iron(wo){3,5}?&amp;#39;) mo = hero1.search(&amp;">
 
 
 
@@ -120,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://albert-5.cn/categories/博客优化/">
+  <link rel="canonical" href="http://albert-5.cn/6c62527f.html">
 
 
 
 
 
-  <title>分类: 博客优化 | Albert's Blog</title>
+  <title>贪心匹配与非贪心匹配算法 | Albert's Blog</title>
   
 
 
@@ -145,7 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -297,53 +301,339 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>博客优化<small>分类</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://albert-5.cn/6c62527f.html">
 
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/f28a9c3d.html" itemprop="url">
-              
-                <span itemprop="name">博客展示Github_Charts</span>
-              
-            </a>
-        
-      </h3>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Albert">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2021-05-27T11:02:07+08:00" content="2021-05-27">
-          05-27
-        </time>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Albert's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">贪心匹配与非贪心匹配算法</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+
+
+
+           
+
+
+
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+ 
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-11T18:14:28+08:00">
+                2021-09-11
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2021-09-11T21:41:52+08:00">
+                2021-09-11
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/正则表达式/" itemprop="url" rel="index">
+                    <span itemprop="name">正则表达式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/6c62527f.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/6c62527f.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="贪心匹配与非贪心匹配"><a href="#贪心匹配与非贪心匹配" class="headerlink" title="贪心匹配与非贪心匹配"></a>贪心匹配与非贪心匹配</h2><blockquote>
+<p>Python的正则表达式默认是贪心的，即在有二义的情况下，它会匹配最长的字符串；非贪心匹配算法则是尽可能匹配最短的字符串，也就是在花括号的后面加上一个问号。</p>
+</blockquote>
+<pre><code class="Python">hero = re.compile(r&#39;Iron(wo){3,5}&#39;)
+hero1 = re.compile(r&#39;Iron(wo){3,5}?&#39;)
+mo = hero1.search(&#39;My favorate hero is Ironwowowowowo&#39;)
+mo1 = hero1.search(&#39;Ironwowowo&#39;)
+print(mo.group())
+print(mo1.group())
+</code></pre>
+<h2 id="findall-方法"><a href="#findall-方法" class="headerlink" title="findall()方法"></a>findall()方法</h2><blockquote>
+<p>前面我们知道，search()方法返回的是一个match对象，包含被查找字符串中的”第一次“匹配的文本，但是findall()方法返回的是所有匹配。</p>
+</blockquote>
+<pre><code class="Python">phonenumber = re.compile(r&#39;\d\d\d\d-\d\d\d-\d\d\d\d&#39;)
+mo = phonenumber.search(&#39;Cell:0371-123-4321&#39;)
+mo1 = phonenumber.findall(&#39;Cell:0371-123-4321 Work:0371-123-5432&#39;)
+print(mo.group())
+print(mo1)
+</code></pre>
+<p>输出结果如下</p>
+<pre><code class="Python">[Running] python -u &quot;e:\vscode_py\.vscode\hello.py&quot;
+0371-123-4321
+[&#39;0371-123-4321&#39;, &#39;0371-123-5432&#39;]
+
+[Done] exited with code=0 in 0.122 seconds
+</code></pre>
+<ul>
+<li>注：findall()方法返回的直接是匹配文本，并不是search()方法返回的match对象。</li>
+</ul>
+<h2 id="字符分类"><a href="#字符分类" class="headerlink" title="字符分类"></a>字符分类</h2><p>常用字符分类<br>\d &nbsp; 0-9的任何数字<br>\D &nbsp; 除0-9的数字以外的任何字符<br>\w &nbsp; 任何字母、数字或下划线字符<br>\W &nbsp; 除字母、数字或下划线以外的任何字符<br>\s &nbsp; 空格、制表符或换行符<br>\S &nbsp; 除空格、制表符和换行符以外的任何字符</p>
+<h2 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h2><blockquote>
+<p>在正则表达式中，<strong>.</strong>(句号)成为通配符。它匹配除了换行符以外的所有字符。</p>
+</blockquote>
+<pre><code class="python">atreg = re.compile(r&#39;.at&#39;)
+print(atreg.findall(&#39;the cat in the hat sat on the flat mat&#39;))
+</code></pre>
+<p>输出结果</p>
+<pre><code class="python">[Running] python -u &quot;e:\vscode_py\.vscode\hello.py&quot;
+[&#39;cat&#39;, &#39;hat&#39;, &#39;sat&#39;, &#39;lat&#39;, &#39;mat&#39;]
+
+[Done] exited with code=0 in 0.235 seconds
+</code></pre>
+<h3 id="用点-星匹配字符"><a href="#用点-星匹配字符" class="headerlink" title="用点-星匹配字符"></a>用点-星匹配字符</h3><blockquote>
+<p>点-星(.*)匹配“任意文本”</p>
+</blockquote>
+<pre><code class="python">name = re.compile(r&#39;First name:(.*) Last name:(.*)&#39;)
+nameres = name.search(&#39;First name: Yuan Last name: Mengchao&#39;)
+print(nameres.group(1))
+print(nameres.group(2))
+print(nameres.group())
+</code></pre>
+<p>点-星通常进行“贪心”匹配，如要想进行“非贪心“匹配，则需要使用<code>.*?</code>。</p>
+<h3 id="用sub-方法替换字符串"><a href="#用sub-方法替换字符串" class="headerlink" title="用sub()方法替换字符串"></a>用sub()方法替换字符串</h3><blockquote>
+<p>正则表达式不仅匹配的文本，还能用新的文本去替代这些模式文本。<code>Regex</code>对象的sub()方法需要</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Donate comment here</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Albert 微信支付">
+        <p>微信支付</p>
       </div>
+    
 
-    </header>
-  </article>
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Albert 支付宝">
+        <p>支付宝</p>
+      </div>
+    
 
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Albert
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://albert-5.cn/6c62527f.html" title="贪心匹配与非贪心匹配算法">http://albert-5.cn/6c62527f.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #FA8072;font-size:10px;">------------- End  <i class="fa fa-hourglass-end" aria-hidden="true"></i>  Thank You For Your Reading -------------</div>
+    
+</div>
 
       
     </div>
 
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/正则表达式/" rel="tag"> <i class="fa fa-tag"></i> 正则表达式</a>
+          
+            <a href="/tags/贪心匹配/" rel="tag"> <i class="fa fa-tag"></i> 贪心匹配</a>
+          
+            <a href="/tags/非贪心匹配/" rel="tag"> <i class="fa fa-tag"></i> 非贪心匹配</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2f57a694.html" rel="next" title="正则表达式">
+                <i class="fa fa-chevron-left"></i> 正则表达式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -351,6 +641,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -371,8 +668,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -455,6 +761,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#贪心匹配与非贪心匹配"><span class="nav-number">1.</span> <span class="nav-text">贪心匹配与非贪心匹配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#findall-方法"><span class="nav-number">2.</span> <span class="nav-text">findall()方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符分类"><span class="nav-number">3.</span> <span class="nav-text">字符分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通配符"><span class="nav-number">4.</span> <span class="nav-text">通配符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用点-星匹配字符"><span class="nav-number">4.1.</span> <span class="nav-text">用点-星匹配字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用sub-方法替换字符串"><span class="nav-number">4.2.</span> <span class="nav-text">用sub()方法替换字符串</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -641,6 +963,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1102,26 +1428,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
